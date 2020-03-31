@@ -170,6 +170,8 @@ netstat -nt | grep -e 127.0.0.1 -e 0.0.0.0 -e ::: -v | awk '/^tcp/ {++state[$NF]
 ```shell
 netstat -anpo | grep "php-cgi" | wc -l
 ```
-
+netstat -lntup |grep 端口号
+说明： l:listening   n:num   t:tcp  u:udp  p:process
+显示当前环境正在监听该端口的进行
 
 <!-- Linux命令行搜索引擎：https://jaywcjlove.github.io/linux-command/ -->
